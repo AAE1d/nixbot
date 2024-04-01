@@ -1,0 +1,7 @@
+[0.030s] Invoking command in '/home/eid/ws_gazebo/src/build/gazebo_ros2_control_demos': CMAKE_PREFIX_PATH=/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/home/eid/ws_gazebo/src/install/serial_motor_demo:/opt/ros/humble LD_LIBRARY_PATH=/home/eid/ws_gazebo/src/install/gazebo_ros2_control/lib:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/lib:/home/eid/ws_gazebo/src/install/serial/lib:/home/eid/ws_gazebo/src/install/diffdrive_arduino/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/eid/ws_gazebo/src/build/gazebo_ros2_control_demos -- -j8 -l8
+[0.097s] [ 16%] Built target example_effort
+[0.100s] [ 33%] Built target example_gripper
+[0.100s] [ 50%] Built target example_position
+[0.102s] [ 66%] Built target example_diff_drive
+[0.105s] [ 83%] Built target example_tricycle_drive
+[0.106s] [100%] Built target example_velocity

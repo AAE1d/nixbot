@@ -1,0 +1,690 @@
+[0.000000] (-) TimerEvent: {}
+[0.000146] (diffdrive_arduino) JobQueued: {'identifier': 'diffdrive_arduino', 'dependencies': OrderedDict()}
+[0.000190] (gazebo_ros2_control) JobQueued: {'identifier': 'gazebo_ros2_control', 'dependencies': OrderedDict()}
+[0.000228] (nixbot) JobQueued: {'identifier': 'nixbot', 'dependencies': OrderedDict()}
+[0.000246] (rplidar_ros) JobQueued: {'identifier': 'rplidar_ros', 'dependencies': OrderedDict()}
+[0.000262] (gazebo_ros2_control_demos) JobQueued: {'identifier': 'gazebo_ros2_control_demos', 'dependencies': OrderedDict([('gazebo_ros2_control', '/home/eid/ws_gazebo/src/install/gazebo_ros2_control')])}
+[0.000312] (gazebo_ros2_control) JobStarted: {'identifier': 'gazebo_ros2_control'}
+[0.005795] (diffdrive_arduino) JobStarted: {'identifier': 'diffdrive_arduino'}
+[0.009997] (nixbot) JobStarted: {'identifier': 'nixbot'}
+[0.014502] (rplidar_ros) JobStarted: {'identifier': 'rplidar_ros'}
+[0.020869] (gazebo_ros2_control) JobProgress: {'identifier': 'gazebo_ros2_control', 'progress': 'cmake'}
+[0.021825] (gazebo_ros2_control) JobProgress: {'identifier': 'gazebo_ros2_control', 'progress': 'build'}
+[0.022696] (gazebo_ros2_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eid/ws_gazebo/src/build/gazebo_ros2_control', '--', '-j8', '-l8'], 'cwd': '/home/eid/ws_gazebo/src/build/gazebo_ros2_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eid'), ('LC_TIME', 'en_US.UTF-8'), ('Lang', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/lib:/home/eid/ws_gazebo/src/install/serial/lib:/home/eid/ws_gazebo/src/install/gazebo_ros2_control/lib:/home/eid/ws_gazebo/src/install/diffdrive_arduino/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eid'), ('OLDPWD', '/home/eid/ws_gazebo/src/nixbot'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1668'), ('SYSTEMD_EXEC_PID', '1834'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5537'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eid/ws_gazebo/src/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'xim'), ('LOGNAME', 'eid'), ('JOURNAL_STREAM', '8:28618'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eid'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/SNOKOS:@/tmp/.ICE-unix/1808,unix/SNOKOS:/tmp/.ICE-unix/1808'), ('INVOCATION_ID', 'e2186537b9204a15bf5a04025266707d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=none'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BAYQL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:dc140fc0-9e74-44bd-bd70-7af89fefef5a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'xim'), ('PWD', '/home/eid/ws_gazebo/src/build/gazebo_ros2_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo/lib/python3.10/site-packages:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/home/eid/ws_gazebo/src/install/serial_motor_demo:/opt/ros/humble')]), 'shell': False}
+[0.026941] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'cmake'}
+[0.028026] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'build'}
+[0.028489] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eid/ws_gazebo/src/build/diffdrive_arduino', '--', '-j8', '-l8'], 'cwd': '/home/eid/ws_gazebo/src/build/diffdrive_arduino', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eid'), ('LC_TIME', 'en_US.UTF-8'), ('Lang', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/lib:/home/eid/ws_gazebo/src/install/serial/lib:/home/eid/ws_gazebo/src/install/gazebo_ros2_control/lib:/home/eid/ws_gazebo/src/install/diffdrive_arduino/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eid'), ('OLDPWD', '/home/eid/ws_gazebo/src/nixbot'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1668'), ('SYSTEMD_EXEC_PID', '1834'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5537'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eid/ws_gazebo/src/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'xim'), ('LOGNAME', 'eid'), ('JOURNAL_STREAM', '8:28618'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eid'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/SNOKOS:@/tmp/.ICE-unix/1808,unix/SNOKOS:/tmp/.ICE-unix/1808'), ('INVOCATION_ID', 'e2186537b9204a15bf5a04025266707d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=none'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BAYQL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:dc140fc0-9e74-44bd-bd70-7af89fefef5a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'xim'), ('PWD', '/home/eid/ws_gazebo/src/build/diffdrive_arduino'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo/lib/python3.10/site-packages:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/home/eid/ws_gazebo/src/install/serial_motor_demo:/opt/ros/humble')]), 'shell': False}
+[0.031550] (nixbot) JobProgress: {'identifier': 'nixbot', 'progress': 'cmake'}
+[0.031966] (nixbot) JobProgress: {'identifier': 'nixbot', 'progress': 'build'}
+[0.032311] (nixbot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eid/ws_gazebo/src/build/nixbot', '--', '-j8', '-l8'], 'cwd': '/home/eid/ws_gazebo/src/build/nixbot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eid'), ('LC_TIME', 'en_US.UTF-8'), ('Lang', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/lib:/home/eid/ws_gazebo/src/install/serial/lib:/home/eid/ws_gazebo/src/install/gazebo_ros2_control/lib:/home/eid/ws_gazebo/src/install/diffdrive_arduino/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eid'), ('OLDPWD', '/home/eid/ws_gazebo/src/nixbot'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1668'), ('SYSTEMD_EXEC_PID', '1834'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5537'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eid/ws_gazebo/src/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'xim'), ('LOGNAME', 'eid'), ('JOURNAL_STREAM', '8:28618'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eid'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/SNOKOS:@/tmp/.ICE-unix/1808,unix/SNOKOS:/tmp/.ICE-unix/1808'), ('INVOCATION_ID', 'e2186537b9204a15bf5a04025266707d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=none'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BAYQL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:dc140fc0-9e74-44bd-bd70-7af89fefef5a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'xim'), ('PWD', '/home/eid/ws_gazebo/src/build/nixbot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo/lib/python3.10/site-packages:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/home/eid/ws_gazebo/src/install/serial_motor_demo:/opt/ros/humble')]), 'shell': False}
+[0.037776] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'cmake'}
+[0.038664] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'build'}
+[0.039559] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eid/ws_gazebo/src/build/rplidar_ros', '--', '-j8', '-l8'], 'cwd': '/home/eid/ws_gazebo/src/build/rplidar_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eid'), ('LC_TIME', 'en_US.UTF-8'), ('Lang', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/lib:/home/eid/ws_gazebo/src/install/serial/lib:/home/eid/ws_gazebo/src/install/gazebo_ros2_control/lib:/home/eid/ws_gazebo/src/install/diffdrive_arduino/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eid'), ('OLDPWD', '/home/eid/ws_gazebo/src/nixbot'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1668'), ('SYSTEMD_EXEC_PID', '1834'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5537'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eid/ws_gazebo/src/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'xim'), ('LOGNAME', 'eid'), ('JOURNAL_STREAM', '8:28618'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eid'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/SNOKOS:@/tmp/.ICE-unix/1808,unix/SNOKOS:/tmp/.ICE-unix/1808'), ('INVOCATION_ID', 'e2186537b9204a15bf5a04025266707d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=none'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BAYQL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:dc140fc0-9e74-44bd-bd70-7af89fefef5a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'xim'), ('PWD', '/home/eid/ws_gazebo/src/build/rplidar_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo/lib/python3.10/site-packages:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/home/eid/ws_gazebo/src/install/serial_motor_demo:/opt/ros/humble')]), 'shell': False}
+[0.057411] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.069489] (nixbot) CommandEnded: {'returncode': 0}
+[0.092025] (diffdrive_arduino) StdoutLine: {'line': b'[100%] Built target diffdrive_arduino\n'}
+[0.095518] (nixbot) JobProgress: {'identifier': 'nixbot', 'progress': 'install'}
+[0.099149] (-) TimerEvent: {}
+[0.101634] (rplidar_ros) StdoutLine: {'line': b'[  5%] Built target rplidar_client\n'}
+[0.108122] (nixbot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eid/ws_gazebo/src/build/nixbot'], 'cwd': '/home/eid/ws_gazebo/src/build/nixbot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eid'), ('LC_TIME', 'en_US.UTF-8'), ('Lang', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/lib:/home/eid/ws_gazebo/src/install/serial/lib:/home/eid/ws_gazebo/src/install/gazebo_ros2_control/lib:/home/eid/ws_gazebo/src/install/diffdrive_arduino/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eid'), ('OLDPWD', '/home/eid/ws_gazebo/src/nixbot'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1668'), ('SYSTEMD_EXEC_PID', '1834'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5537'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eid/ws_gazebo/src/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'xim'), ('LOGNAME', 'eid'), ('JOURNAL_STREAM', '8:28618'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eid'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/SNOKOS:@/tmp/.ICE-unix/1808,unix/SNOKOS:/tmp/.ICE-unix/1808'), ('INVOCATION_ID', 'e2186537b9204a15bf5a04025266707d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=none'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BAYQL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:dc140fc0-9e74-44bd-bd70-7af89fefef5a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'xim'), ('PWD', '/home/eid/ws_gazebo/src/build/nixbot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo/lib/python3.10/site-packages:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/home/eid/ws_gazebo/src/install/serial_motor_demo:/opt/ros/humble')]), 'shell': False}
+[0.110261] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[0.112331] (rplidar_ros) StdoutLine: {'line': b'[100%] Built target rplidar_composition\n'}
+[0.112791] (rplidar_ros) StdoutLine: {'line': b'[100%] Built target rplidar_node\n'}
+[0.118033] (nixbot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.118694] (nixbot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.119429] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//launch/display.launch.py\n'}
+[0.119622] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//launch/frames_2024-03-03_21.54.33.gv\n'}
+[0.119814] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//launch/frames_2024-03-03_21.54.33.pdf\n'}
+[0.119966] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//launch/frames_2024-03-03_21.55.09.gv\n'}
+[0.120132] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//launch/frames_2024-03-03_21.55.09.pdf\n'}
+[0.120352] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//launch/gazebo_model.launch.py\n'}
+[0.120562] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//launch/launch_robot.launch.py\n'}
+[0.120738] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//launch/launch_sim.launch.py\n'}
+[0.120870] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//launch/localization_launch.py\n'}
+[0.120999] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//launch/mapping.launch.py\n'}
+[0.121324] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//launch/navigation2_launch.py\n'}
+[0.121483] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//launch/rsp.launch.py\n'}
+[0.121639] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//launch/rviz.launch.py\n'}
+[0.121800] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//launch/world.launch\n'}
+[0.122318] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//model/gazebo_control.xacro\n'}
+[0.122496] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//model/inertial_macros.xacro\n'}
+[0.122665] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//model/lidar.xacro\n'}
+[0.122813] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//model/rob.urdf\n'}
+[0.123077] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//model/robot.urdf.xacro\n'}
+[0.123333] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//model/robot_core.xacro\n'}
+[0.123522] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//model/ros2_control.xacro\n'}
+[0.123708] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//model/ros2_control_orig.xacro\n'}
+[0.124008] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot//rviz/config.rviz\n'}
+[0.124684] (rplidar_ros) CommandEnded: {'returncode': 0}
+[0.125947] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/ament_index/resource_index/package_run_dependencies/nixbot\n'}
+[0.126489] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/ament_index/resource_index/parent_prefix_path/nixbot\n'}
+[0.126652] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot/environment/ament_prefix_path.sh\n'}
+[0.126800] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot/environment/ament_prefix_path.dsv\n'}
+[0.126948] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot/environment/path.sh\n'}
+[0.127103] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot/environment/path.dsv\n'}
+[0.127283] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot/local_setup.bash\n'}
+[0.127945] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot/local_setup.sh\n'}
+[0.128100] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot/local_setup.zsh\n'}
+[0.128396] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot/local_setup.dsv\n'}
+[0.128542] (nixbot) StdoutLine: {'line': b'-- Symlinking: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot/package.dsv\n'}
+[0.135147] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/ament_index/resource_index/packages/nixbot\n'}
+[0.135412] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot/cmake/nixbotConfig.cmake\n'}
+[0.135619] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot/cmake/nixbotConfig-version.cmake\n'}
+[0.135910] (nixbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/nixbot/share/nixbot/package.xml\n'}
+[0.137670] (nixbot) CommandEnded: {'returncode': 0}
+[0.149698] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'install'}
+[0.150063] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eid/ws_gazebo/src/build/diffdrive_arduino'], 'cwd': '/home/eid/ws_gazebo/src/build/diffdrive_arduino', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eid'), ('LC_TIME', 'en_US.UTF-8'), ('Lang', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/lib:/home/eid/ws_gazebo/src/install/serial/lib:/home/eid/ws_gazebo/src/install/gazebo_ros2_control/lib:/home/eid/ws_gazebo/src/install/diffdrive_arduino/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eid'), ('OLDPWD', '/home/eid/ws_gazebo/src/nixbot'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1668'), ('SYSTEMD_EXEC_PID', '1834'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5537'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eid/ws_gazebo/src/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'xim'), ('LOGNAME', 'eid'), ('JOURNAL_STREAM', '8:28618'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eid'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/SNOKOS:@/tmp/.ICE-unix/1808,unix/SNOKOS:/tmp/.ICE-unix/1808'), ('INVOCATION_ID', 'e2186537b9204a15bf5a04025266707d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=none'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BAYQL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:dc140fc0-9e74-44bd-bd70-7af89fefef5a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'xim'), ('PWD', '/home/eid/ws_gazebo/src/build/diffdrive_arduino'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo/lib/python3.10/site-packages:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/home/eid/ws_gazebo/src/install/serial_motor_demo:/opt/ros/humble')]), 'shell': False}
+[0.158031] (diffdrive_arduino) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.158622] (diffdrive_arduino) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.158889] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino//diffdrive_arduino.xml\n'}
+[0.159360] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/arduino_comms.hpp\n'}
+[0.159565] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/diffbot_system.hpp\n'}
+[0.159758] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/visibility_control.h\n'}
+[0.160101] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/wheel.hpp\n'}
+[0.160297] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/launch/view_robot.launch.py\n'}
+[0.160904] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/ros2_control/diffbot.ros2_control.xacro\n'}
+[0.161129] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot.materials.xacro\n'}
+[0.161335] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot.urdf.xacro\n'}
+[0.161512] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot_description.urdf.xacro\n'}
+[0.161678] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/rviz/diffbot.rviz\n'}
+[0.161970] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/rviz/diffbot_view.rviz\n'}
+[0.163432] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/launch/diffbot.launch.py\n'}
+[0.164841] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/config/diffbot_controllers.yaml\n'}
+[0.165118] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.sh\n'}
+[0.165423] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.dsv\n'}
+[0.165645] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/ament_index/resource_index/package_run_dependencies/diffdrive_arduino\n'}
+[0.165909] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/ament_index/resource_index/parent_prefix_path/diffdrive_arduino\n'}
+[0.166293] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.sh\n'}
+[0.166514] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.dsv\n'}
+[0.166891] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.sh\n'}
+[0.167077] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.dsv\n'}
+[0.167271] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.bash\n'}
+[0.167721] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.sh\n'}
+[0.167946] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.zsh\n'}
+[0.168115] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.dsv\n'}
+[0.168355] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv\n'}
+[0.177317] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/ament_index/resource_index/packages/diffdrive_arduino\n'}
+[0.177837] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diffdrive_arduino\n'}
+[0.178061] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.178381] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.178726] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig.cmake\n'}
+[0.178962] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig-version.cmake\n'}
+[0.179151] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/package.xml\n'}
+[0.179520] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date: /home/eid/ws_gazebo/src/install/diffdrive_arduino/lib/libdiffdrive_arduino.so\n'}
+[0.179676] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/cmake/export_diffdrive_arduinoExport.cmake\n'}
+[0.180016] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date: /home/eid/ws_gazebo/src/install/diffdrive_arduino/share/diffdrive_arduino/cmake/export_diffdrive_arduinoExport-noconfig.cmake\n'}
+[0.185020] (nixbot) JobEnded: {'identifier': 'nixbot', 'rc': 0}
+[0.186816] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[0.198770] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'install'}
+[0.199836] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eid/ws_gazebo/src/build/rplidar_ros'], 'cwd': '/home/eid/ws_gazebo/src/build/rplidar_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eid'), ('LC_TIME', 'en_US.UTF-8'), ('Lang', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/lib:/home/eid/ws_gazebo/src/install/serial/lib:/home/eid/ws_gazebo/src/install/gazebo_ros2_control/lib:/home/eid/ws_gazebo/src/install/diffdrive_arduino/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eid'), ('OLDPWD', '/home/eid/ws_gazebo/src/nixbot'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1668'), ('SYSTEMD_EXEC_PID', '1834'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5537'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eid/ws_gazebo/src/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'xim'), ('LOGNAME', 'eid'), ('JOURNAL_STREAM', '8:28618'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eid'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/SNOKOS:@/tmp/.ICE-unix/1808,unix/SNOKOS:/tmp/.ICE-unix/1808'), ('INVOCATION_ID', 'e2186537b9204a15bf5a04025266707d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=none'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BAYQL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:dc140fc0-9e74-44bd-bd70-7af89fefef5a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'xim'), ('PWD', '/home/eid/ws_gazebo/src/build/rplidar_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo/lib/python3.10/site-packages:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/home/eid/ws_gazebo/src/install/serial_motor_demo:/opt/ros/humble')]), 'shell': False}
+[0.201258] (-) TimerEvent: {}
+[0.207007] (rplidar_ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.207565] (rplidar_ros) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.208162] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a1_launch.py\n'}
+[0.208339] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m12_launch.py\n'}
+[0.208494] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m7_launch.py\n'}
+[0.208631] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m8_launch.py\n'}
+[0.208892] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3_launch.py\n'}
+[0.209014] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/rplidar_c1_launch.py\n'}
+[0.209153] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_launch.py\n'}
+[0.209275] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp_launch.py\n'}
+[0.209369] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2_launch.py\n'}
+[0.209489] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2e_launch.py\n'}
+[0.209609] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s3_launch.py\n'}
+[0.209857] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/rplidar_t1_launch.py\n'}
+[0.209983] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a1_launch.py\n'}
+[0.210107] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m12_launch.py\n'}
+[0.210329] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m7_launch.py\n'}
+[0.210479] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m8_launch.py\n'}
+[0.210732] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3_launch.py\n'}
+[0.210862] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_c1_launch.py\n'}
+[0.210983] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_launch.py\n'}
+[0.211104] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp_launch.py\n'}
+[0.211248] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2_launch.py\n'}
+[0.211470] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2e_launch.py\n'}
+[0.211604] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s3_launch.py\n'}
+[0.211729] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_t1_launch.py\n'}
+[0.211981] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/rviz/rplidar_ros.rviz\n'}
+[0.212382] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/lib/rplidar_ros/rplidar_node\n'}
+[0.212596] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/lib/rplidar_ros/rplidar_composition\n'}
+[0.212823] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/lib/rplidar_ros/rplidar_client\n'}
+[0.213144] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros\n'}
+[0.213438] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros\n'}
+[0.213717] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh\n'}
+[0.213916] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv\n'}
+[0.214296] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/environment/path.sh\n'}
+[0.214450] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/environment/path.dsv\n'}
+[0.214669] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/local_setup.bash\n'}
+[0.214846] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/local_setup.sh\n'}
+[0.215140] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/local_setup.zsh\n'}
+[0.215444] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/local_setup.dsv\n'}
+[0.215586] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/package.dsv\n'}
+[0.216517] (gazebo_ros2_control) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.224303] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros\n'}
+[0.224883] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found angles: 1.15.0 (/opt/ros/humble/share/angles/cmake)\n'}
+[0.225074] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.225287] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.225579] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake\n'}
+[0.225867] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake\n'}
+[0.226022] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/rplidar_ros/share/rplidar_ros/package.xml\n'}
+[0.226309] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found controller_manager: 2.40.0 (/opt/ros/humble/share/controller_manager/cmake)\n'}
+[0.232950] (diffdrive_arduino) JobEnded: {'identifier': 'diffdrive_arduino', 'rc': 0}
+[0.234791] (rplidar_ros) CommandEnded: {'returncode': 0}
+[0.259614] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.262278] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.268919] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.281518] (gazebo_ros2_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.297808] (gazebo_ros2_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.301335] (-) TimerEvent: {}
+[0.314907] (rplidar_ros) JobEnded: {'identifier': 'rplidar_ros', 'rc': 0}
+[0.401452] (-) TimerEvent: {}
+[0.501710] (-) TimerEvent: {}
+[0.601990] (-) TimerEvent: {}
+[0.702291] (-) TimerEvent: {}
+[0.802597] (-) TimerEvent: {}
+[0.902902] (-) TimerEvent: {}
+[0.957638] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.959147] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.992379] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[1.000852] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[1.003034] (-) TimerEvent: {}
+[1.023650] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[1.031795] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[1.042749] (gazebo_ros2_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.103197] (-) TimerEvent: {}
+[1.203529] (-) TimerEvent: {}
+[1.303846] (-) TimerEvent: {}
+[1.404176] (-) TimerEvent: {}
+[1.504492] (-) TimerEvent: {}
+[1.604786] (-) TimerEvent: {}
+[1.667390] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found gazebo_dev: 3.7.0 (/opt/ros/humble/share/gazebo_dev/cmake)\n'}
+[1.694943] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[1.704878] (-) TimerEvent: {}
+[1.721760] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.723210] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.727295] (gazebo_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.728631] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[1.734689] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[1.734922] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[1.744890] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[1.745082] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[1.745194] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[1.745370] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[1.745472] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[1.745549] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[1.745609] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[1.745677] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[1.745733] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[1.745788] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[1.745844] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[1.745897] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[1.805021] (-) TimerEvent: {}
+[1.865318] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.865761] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[1.866240] (gazebo_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[1.885272] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.897194] (gazebo_ros2_control) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.901942] (gazebo_ros2_control) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.905135] (-) TimerEvent: {}
+[1.914795] (gazebo_ros2_control) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.954206] (gazebo_ros2_control) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.966583] (gazebo_ros2_control) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[1.995645] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.996074] (gazebo_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[2.005207] (-) TimerEvent: {}
+[2.016416] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.023675] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.024035] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.024542] (gazebo_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[2.024687] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[2.024789] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[2.036088] (gazebo_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[2.036523] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[2.037078] (gazebo_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[2.037429] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.038375] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[2.038786] (gazebo_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[2.078364] (gazebo_ros2_control) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[2.090762] (gazebo_ros2_control) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[2.105377] (-) TimerEvent: {}
+[2.127602] (gazebo_ros2_control) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[2.140844] (gazebo_ros2_control) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[2.172282] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.172693] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.173125] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.174633] (gazebo_ros2_control) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[2.175171] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[2.183918] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found yaml_cpp_vendor: 8.0.2 (/opt/ros/humble/share/yaml_cpp_vendor/cmake)\n'}
+[2.205503] (-) TimerEvent: {}
+[2.305778] (-) TimerEvent: {}
+[2.406102] (-) TimerEvent: {}
+[2.506511] (-) TimerEvent: {}
+[2.606829] (-) TimerEvent: {}
+[2.707158] (-) TimerEvent: {}
+[2.807421] (-) TimerEvent: {}
+[2.866079] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.8 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[2.866845] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.907501] (-) TimerEvent: {}
+[2.943593] (gazebo_ros2_control) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.944711] (gazebo_ros2_control) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.945275] (gazebo_ros2_control) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/eid/ws_gazebo/src/gazebo_ros2_control/gazebo_ros2_control/include\n'}
+[2.945379] (gazebo_ros2_control) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.946154] (gazebo_ros2_control) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.946246] (gazebo_ros2_control) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.946772] (gazebo_ros2_control) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.947898] (gazebo_ros2_control) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.947998] (gazebo_ros2_control) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.948286] (gazebo_ros2_control) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.950377] (gazebo_ros2_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.007622] (-) TimerEvent: {}
+[3.034286] (gazebo_ros2_control) StdoutLine: {'line': b'-- Generating done\n'}
+[3.037875] (gazebo_ros2_control) StdoutLine: {'line': b'-- Build files have been written to: /home/eid/ws_gazebo/src/build/gazebo_ros2_control\n'}
+[3.070824] (gazebo_ros2_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gazebo_hardware_plugins\x1b[0m\n'}
+[3.071670] (gazebo_ros2_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gazebo_ros2_control\x1b[0m\n'}
+[3.107751] (-) TimerEvent: {}
+[3.110950] (gazebo_ros2_control) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/gazebo_ros2_control.dir/src/gazebo_ros2_control_plugin.cpp.o\x1b[0m\n'}
+[3.116449] (gazebo_ros2_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/gazebo_hardware_plugins.dir/src/gazebo_system.cpp.o\x1b[0m\n'}
+[3.207872] (-) TimerEvent: {}
+[3.308122] (-) TimerEvent: {}
+[3.408359] (-) TimerEvent: {}
+[3.508603] (-) TimerEvent: {}
+[3.608936] (-) TimerEvent: {}
+[3.709160] (-) TimerEvent: {}
+[3.809437] (-) TimerEvent: {}
+[3.909711] (-) TimerEvent: {}
+[4.010035] (-) TimerEvent: {}
+[4.110516] (-) TimerEvent: {}
+[4.211023] (-) TimerEvent: {}
+[4.311288] (-) TimerEvent: {}
+[4.411548] (-) TimerEvent: {}
+[4.511832] (-) TimerEvent: {}
+[4.612116] (-) TimerEvent: {}
+[4.712354] (-) TimerEvent: {}
+[4.812620] (-) TimerEvent: {}
+[4.912935] (-) TimerEvent: {}
+[5.013289] (-) TimerEvent: {}
+[5.113609] (-) TimerEvent: {}
+[5.213975] (-) TimerEvent: {}
+[5.314325] (-) TimerEvent: {}
+[5.414662] (-) TimerEvent: {}
+[5.515027] (-) TimerEvent: {}
+[5.615389] (-) TimerEvent: {}
+[5.715726] (-) TimerEvent: {}
+[5.816037] (-) TimerEvent: {}
+[5.916378] (-) TimerEvent: {}
+[6.016680] (-) TimerEvent: {}
+[6.117012] (-) TimerEvent: {}
+[6.217324] (-) TimerEvent: {}
+[6.317596] (-) TimerEvent: {}
+[6.417909] (-) TimerEvent: {}
+[6.518167] (-) TimerEvent: {}
+[6.618462] (-) TimerEvent: {}
+[6.718736] (-) TimerEvent: {}
+[6.819023] (-) TimerEvent: {}
+[6.919313] (-) TimerEvent: {}
+[7.019592] (-) TimerEvent: {}
+[7.119884] (-) TimerEvent: {}
+[7.220186] (-) TimerEvent: {}
+[7.320497] (-) TimerEvent: {}
+[7.420835] (-) TimerEvent: {}
+[7.521143] (-) TimerEvent: {}
+[7.621500] (-) TimerEvent: {}
+[7.721821] (-) TimerEvent: {}
+[7.822131] (-) TimerEvent: {}
+[7.922441] (-) TimerEvent: {}
+[8.022750] (-) TimerEvent: {}
+[8.123054] (-) TimerEvent: {}
+[8.223395] (-) TimerEvent: {}
+[8.323703] (-) TimerEvent: {}
+[8.423998] (-) TimerEvent: {}
+[8.524304] (-) TimerEvent: {}
+[8.624601] (-) TimerEvent: {}
+[8.724918] (-) TimerEvent: {}
+[8.825168] (-) TimerEvent: {}
+[8.925464] (-) TimerEvent: {}
+[9.025771] (-) TimerEvent: {}
+[9.126078] (-) TimerEvent: {}
+[9.226434] (-) TimerEvent: {}
+[9.326733] (-) TimerEvent: {}
+[9.427043] (-) TimerEvent: {}
+[9.527360] (-) TimerEvent: {}
+[9.627655] (-) TimerEvent: {}
+[9.727947] (-) TimerEvent: {}
+[9.828290] (-) TimerEvent: {}
+[9.928575] (-) TimerEvent: {}
+[10.028856] (-) TimerEvent: {}
+[10.129143] (-) TimerEvent: {}
+[10.229385] (-) TimerEvent: {}
+[10.329677] (-) TimerEvent: {}
+[10.429958] (-) TimerEvent: {}
+[10.530227] (-) TimerEvent: {}
+[10.630540] (-) TimerEvent: {}
+[10.730863] (-) TimerEvent: {}
+[10.831226] (-) TimerEvent: {}
+[10.931490] (-) TimerEvent: {}
+[11.031772] (-) TimerEvent: {}
+[11.132067] (-) TimerEvent: {}
+[11.232422] (-) TimerEvent: {}
+[11.332724] (-) TimerEvent: {}
+[11.433019] (-) TimerEvent: {}
+[11.533353] (-) TimerEvent: {}
+[11.633652] (-) TimerEvent: {}
+[11.733966] (-) TimerEvent: {}
+[11.834289] (-) TimerEvent: {}
+[11.934637] (-) TimerEvent: {}
+[12.034971] (-) TimerEvent: {}
+[12.135297] (-) TimerEvent: {}
+[12.235666] (-) TimerEvent: {}
+[12.335977] (-) TimerEvent: {}
+[12.436258] (-) TimerEvent: {}
+[12.536577] (-) TimerEvent: {}
+[12.636907] (-) TimerEvent: {}
+[12.737320] (-) TimerEvent: {}
+[12.837648] (-) TimerEvent: {}
+[12.937939] (-) TimerEvent: {}
+[13.038262] (-) TimerEvent: {}
+[13.138523] (-) TimerEvent: {}
+[13.238817] (-) TimerEvent: {}
+[13.339179] (-) TimerEvent: {}
+[13.439458] (-) TimerEvent: {}
+[13.539733] (-) TimerEvent: {}
+[13.640073] (-) TimerEvent: {}
+[13.740386] (-) TimerEvent: {}
+[13.840742] (-) TimerEvent: {}
+[13.941045] (-) TimerEvent: {}
+[14.041346] (-) TimerEvent: {}
+[14.141641] (-) TimerEvent: {}
+[14.241935] (-) TimerEvent: {}
+[14.342195] (-) TimerEvent: {}
+[14.442476] (-) TimerEvent: {}
+[14.542771] (-) TimerEvent: {}
+[14.643106] (-) TimerEvent: {}
+[14.743469] (-) TimerEvent: {}
+[14.843781] (-) TimerEvent: {}
+[14.944182] (-) TimerEvent: {}
+[15.044600] (-) TimerEvent: {}
+[15.144920] (-) TimerEvent: {}
+[15.245217] (-) TimerEvent: {}
+[15.345497] (-) TimerEvent: {}
+[15.445809] (-) TimerEvent: {}
+[15.546160] (-) TimerEvent: {}
+[15.646524] (-) TimerEvent: {}
+[15.746848] (-) TimerEvent: {}
+[15.847194] (-) TimerEvent: {}
+[15.947510] (-) TimerEvent: {}
+[16.047841] (-) TimerEvent: {}
+[16.148156] (-) TimerEvent: {}
+[16.248459] (-) TimerEvent: {}
+[16.348723] (-) TimerEvent: {}
+[16.448965] (-) TimerEvent: {}
+[16.549285] (-) TimerEvent: {}
+[16.649584] (-) TimerEvent: {}
+[16.749876] (-) TimerEvent: {}
+[16.850191] (-) TimerEvent: {}
+[16.950537] (-) TimerEvent: {}
+[17.024223] (gazebo_ros2_control) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libgazebo_hardware_plugins.so\x1b[0m\n'}
+[17.050679] (-) TimerEvent: {}
+[17.151000] (-) TimerEvent: {}
+[17.251328] (-) TimerEvent: {}
+[17.351755] (-) TimerEvent: {}
+[17.452121] (-) TimerEvent: {}
+[17.552544] (-) TimerEvent: {}
+[17.652821] (-) TimerEvent: {}
+[17.655833] (gazebo_ros2_control) StdoutLine: {'line': b'[ 75%] Built target gazebo_hardware_plugins\n'}
+[17.752956] (-) TimerEvent: {}
+[17.853200] (-) TimerEvent: {}
+[17.953518] (-) TimerEvent: {}
+[18.053803] (-) TimerEvent: {}
+[18.154116] (-) TimerEvent: {}
+[18.254485] (-) TimerEvent: {}
+[18.354768] (-) TimerEvent: {}
+[18.455088] (-) TimerEvent: {}
+[18.555357] (-) TimerEvent: {}
+[18.655652] (-) TimerEvent: {}
+[18.755930] (-) TimerEvent: {}
+[18.856218] (-) TimerEvent: {}
+[18.942811] (gazebo_ros2_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libgazebo_ros2_control.so\x1b[0m\n'}
+[18.956309] (-) TimerEvent: {}
+[19.056628] (-) TimerEvent: {}
+[19.156938] (-) TimerEvent: {}
+[19.257220] (-) TimerEvent: {}
+[19.357512] (-) TimerEvent: {}
+[19.457807] (-) TimerEvent: {}
+[19.558115] (-) TimerEvent: {}
+[19.658378] (-) TimerEvent: {}
+[19.685952] (gazebo_ros2_control) StdoutLine: {'line': b'[100%] Built target gazebo_ros2_control\n'}
+[19.697757] (gazebo_ros2_control) CommandEnded: {'returncode': 0}
+[19.730970] (gazebo_ros2_control) JobProgress: {'identifier': 'gazebo_ros2_control', 'progress': 'install'}
+[19.732396] (gazebo_ros2_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eid/ws_gazebo/src/build/gazebo_ros2_control'], 'cwd': '/home/eid/ws_gazebo/src/build/gazebo_ros2_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eid'), ('LC_TIME', 'en_US.UTF-8'), ('Lang', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/lib:/home/eid/ws_gazebo/src/install/serial/lib:/home/eid/ws_gazebo/src/install/gazebo_ros2_control/lib:/home/eid/ws_gazebo/src/install/diffdrive_arduino/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eid'), ('OLDPWD', '/home/eid/ws_gazebo/src/nixbot'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1668'), ('SYSTEMD_EXEC_PID', '1834'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5537'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eid/ws_gazebo/src/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'xim'), ('LOGNAME', 'eid'), ('JOURNAL_STREAM', '8:28618'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eid'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/SNOKOS:@/tmp/.ICE-unix/1808,unix/SNOKOS:/tmp/.ICE-unix/1808'), ('INVOCATION_ID', 'e2186537b9204a15bf5a04025266707d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=none'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BAYQL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:dc140fc0-9e74-44bd-bd70-7af89fefef5a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'xim'), ('PWD', '/home/eid/ws_gazebo/src/build/gazebo_ros2_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo/lib/python3.10/site-packages:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/home/eid/ws_gazebo/src/install/serial_motor_demo:/opt/ros/humble')]), 'shell': False}
+[19.739742] (gazebo_ros2_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.740213] (gazebo_ros2_control) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[19.740718] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/lib/libgazebo_ros2_control.so\n'}
+[19.740912] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/lib/libgazebo_hardware_plugins.so\n'}
+[19.741085] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/gazebo_ros2_control/environment/library_path.sh\n'}
+[19.741235] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/gazebo_ros2_control/environment/library_path.dsv\n'}
+[19.741523] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/include/gazebo_ros2_control/gazebo_ros2_control_plugin.hpp\n'}
+[19.741625] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/include/gazebo_ros2_control/gazebo_system.hpp\n'}
+[19.741743] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/include/gazebo_ros2_control/gazebo_system_interface.hpp\n'}
+[19.741962] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/gazebo_ros2_control//gazebo_hardware_plugins.xml\n'}
+[19.742228] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/ament_index/resource_index/package_run_dependencies/gazebo_ros2_control\n'}
+[19.742471] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/ament_index/resource_index/parent_prefix_path/gazebo_ros2_control\n'}
+[19.742624] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/gazebo_ros2_control/environment/ament_prefix_path.sh\n'}
+[19.742740] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/gazebo_ros2_control/environment/ament_prefix_path.dsv\n'}
+[19.742862] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/gazebo_ros2_control/environment/path.sh\n'}
+[19.743010] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/gazebo_ros2_control/environment/path.dsv\n'}
+[19.743100] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/gazebo_ros2_control/local_setup.bash\n'}
+[19.743317] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/gazebo_ros2_control/local_setup.sh\n'}
+[19.743485] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/gazebo_ros2_control/local_setup.zsh\n'}
+[19.743593] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/gazebo_ros2_control/local_setup.dsv\n'}
+[19.743703] (gazebo_ros2_control) StdoutLine: {'line': b'-- Symlinking: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/gazebo_ros2_control/package.dsv\n'}
+[19.752026] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/ament_index/resource_index/packages/gazebo_ros2_control\n'}
+[19.752278] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/ament_index/resource_index/gazebo_ros2_control__pluginlib__plugin/gazebo_ros2_control\n'}
+[19.752393] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/gazebo_ros2_control/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[19.752461] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/gazebo_ros2_control/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[19.752643] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/gazebo_ros2_control/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[19.752773] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/gazebo_ros2_control/cmake/gazebo_ros2_controlConfig.cmake\n'}
+[19.752905] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/gazebo_ros2_control/cmake/gazebo_ros2_controlConfig-version.cmake\n'}
+[19.753033] (gazebo_ros2_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control/share/gazebo_ros2_control/package.xml\n'}
+[19.754758] (gazebo_ros2_control) CommandEnded: {'returncode': 0}
+[19.758471] (-) TimerEvent: {}
+[19.800546] (gazebo_ros2_control) JobEnded: {'identifier': 'gazebo_ros2_control', 'rc': 0}
+[19.801704] (gazebo_ros2_control_demos) JobStarted: {'identifier': 'gazebo_ros2_control_demos'}
+[19.809856] (gazebo_ros2_control_demos) JobProgress: {'identifier': 'gazebo_ros2_control_demos', 'progress': 'cmake'}
+[19.811128] (gazebo_ros2_control_demos) JobProgress: {'identifier': 'gazebo_ros2_control_demos', 'progress': 'build'}
+[19.811303] (gazebo_ros2_control_demos) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eid/ws_gazebo/src/build/gazebo_ros2_control_demos', '--', '-j8', '-l8'], 'cwd': '/home/eid/ws_gazebo/src/build/gazebo_ros2_control_demos', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eid'), ('LC_TIME', 'en_US.UTF-8'), ('Lang', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eid/ws_gazebo/src/install/gazebo_ros2_control/lib:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/lib:/home/eid/ws_gazebo/src/install/serial/lib:/home/eid/ws_gazebo/src/install/diffdrive_arduino/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eid'), ('OLDPWD', '/home/eid/ws_gazebo/src/nixbot'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1668'), ('SYSTEMD_EXEC_PID', '1834'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5537'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eid/ws_gazebo/src/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'xim'), ('LOGNAME', 'eid'), ('JOURNAL_STREAM', '8:28618'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eid'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/SNOKOS:@/tmp/.ICE-unix/1808,unix/SNOKOS:/tmp/.ICE-unix/1808'), ('INVOCATION_ID', 'e2186537b9204a15bf5a04025266707d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=none'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BAYQL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:dc140fc0-9e74-44bd-bd70-7af89fefef5a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'xim'), ('PWD', '/home/eid/ws_gazebo/src/build/gazebo_ros2_control_demos'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo/lib/python3.10/site-packages:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/home/eid/ws_gazebo/src/install/serial_motor_demo:/opt/ros/humble')]), 'shell': False}
+[19.837308] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[19.858605] (-) TimerEvent: {}
+[19.952947] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[19.958703] (-) TimerEvent: {}
+[19.960435] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Found control_msgs: 4.4.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[19.988392] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[19.990887] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[19.997384] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[20.009879] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[20.026671] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[20.058852] (-) TimerEvent: {}
+[20.159204] (-) TimerEvent: {}
+[20.259470] (-) TimerEvent: {}
+[20.359757] (-) TimerEvent: {}
+[20.460051] (-) TimerEvent: {}
+[20.560350] (-) TimerEvent: {}
+[20.590277] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[20.639903] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[20.641393] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[20.660416] (-) TimerEvent: {}
+[20.760681] (-) TimerEvent: {}
+[20.766050] (gazebo_ros2_control_demos) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[20.860804] (-) TimerEvent: {}
+[20.899065] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.8 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[20.936424] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.8 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[20.936938] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[20.960936] (-) TimerEvent: {}
+[21.013060] (gazebo_ros2_control_demos) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[21.014926] (gazebo_ros2_control_demos) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[21.015075] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[21.015162] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[21.016724] (gazebo_ros2_control_demos) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[21.016816] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[21.017406] (gazebo_ros2_control_demos) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[21.018177] (gazebo_ros2_control_demos) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[21.018587] (gazebo_ros2_control_demos) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[21.020164] (gazebo_ros2_control_demos) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[21.020264] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[21.020773] (gazebo_ros2_control_demos) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[21.021824] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Configuring done\n'}
+[21.047092] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Generating done\n'}
+[21.049178] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Build files have been written to: /home/eid/ws_gazebo/src/build/gazebo_ros2_control_demos\n'}
+[21.061077] (-) TimerEvent: {}
+[21.075989] (gazebo_ros2_control_demos) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target example_tricycle_drive\x1b[0m\n'}
+[21.076276] (gazebo_ros2_control_demos) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target example_position\x1b[0m\n'}
+[21.077891] (gazebo_ros2_control_demos) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target example_velocity\x1b[0m\n'}
+[21.078295] (gazebo_ros2_control_demos) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target example_effort\x1b[0m\n'}
+[21.078508] (gazebo_ros2_control_demos) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target example_diff_drive\x1b[0m\n'}
+[21.079088] (gazebo_ros2_control_demos) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target example_gripper\x1b[0m\n'}
+[21.098221] (gazebo_ros2_control_demos) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/example_tricycle_drive.dir/examples/example_tricycle_drive.cpp.o\x1b[0m\n'}
+[21.099725] (gazebo_ros2_control_demos) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/example_position.dir/examples/example_position.cpp.o\x1b[0m\n'}
+[21.099983] (gazebo_ros2_control_demos) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/example_velocity.dir/examples/example_velocity.cpp.o\x1b[0m\n'}
+[21.101414] (gazebo_ros2_control_demos) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/example_effort.dir/examples/example_effort.cpp.o\x1b[0m\n'}
+[21.104511] (gazebo_ros2_control_demos) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/example_gripper.dir/examples/example_gripper.cpp.o\x1b[0m\n'}
+[21.104884] (gazebo_ros2_control_demos) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/example_diff_drive.dir/examples/example_diff_drive.cpp.o\x1b[0m\n'}
+[21.161188] (-) TimerEvent: {}
+[21.261560] (-) TimerEvent: {}
+[21.362041] (-) TimerEvent: {}
+[21.462419] (-) TimerEvent: {}
+[21.562742] (-) TimerEvent: {}
+[21.663118] (-) TimerEvent: {}
+[21.763534] (-) TimerEvent: {}
+[21.864014] (-) TimerEvent: {}
+[21.964482] (-) TimerEvent: {}
+[22.064976] (-) TimerEvent: {}
+[22.165467] (-) TimerEvent: {}
+[22.265920] (-) TimerEvent: {}
+[22.366624] (-) TimerEvent: {}
+[22.467161] (-) TimerEvent: {}
+[22.567737] (-) TimerEvent: {}
+[22.668248] (-) TimerEvent: {}
+[22.768695] (-) TimerEvent: {}
+[22.869170] (-) TimerEvent: {}
+[22.969622] (-) TimerEvent: {}
+[23.070099] (-) TimerEvent: {}
+[23.170550] (-) TimerEvent: {}
+[23.270905] (-) TimerEvent: {}
+[23.371281] (-) TimerEvent: {}
+[23.478661] (-) TimerEvent: {}
+[23.579033] (-) TimerEvent: {}
+[23.679446] (-) TimerEvent: {}
+[23.779801] (-) TimerEvent: {}
+[23.880249] (-) TimerEvent: {}
+[23.980686] (-) TimerEvent: {}
+[24.081149] (-) TimerEvent: {}
+[24.181619] (-) TimerEvent: {}
+[24.281986] (-) TimerEvent: {}
+[24.382508] (-) TimerEvent: {}
+[24.482876] (-) TimerEvent: {}
+[24.583354] (-) TimerEvent: {}
+[24.683830] (-) TimerEvent: {}
+[24.784368] (-) TimerEvent: {}
+[24.884948] (-) TimerEvent: {}
+[24.985473] (-) TimerEvent: {}
+[25.085923] (-) TimerEvent: {}
+[25.186387] (-) TimerEvent: {}
+[25.286865] (-) TimerEvent: {}
+[25.387286] (-) TimerEvent: {}
+[25.487624] (-) TimerEvent: {}
+[25.587985] (-) TimerEvent: {}
+[25.688363] (-) TimerEvent: {}
+[25.788735] (-) TimerEvent: {}
+[25.889130] (-) TimerEvent: {}
+[25.989641] (-) TimerEvent: {}
+[26.090013] (-) TimerEvent: {}
+[26.190415] (-) TimerEvent: {}
+[26.292764] (-) TimerEvent: {}
+[26.393362] (-) TimerEvent: {}
+[26.493914] (-) TimerEvent: {}
+[26.594517] (-) TimerEvent: {}
+[26.682010] (gazebo_ros2_control_demos) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX executable example_tricycle_drive\x1b[0m\n'}
+[26.694672] (-) TimerEvent: {}
+[26.795212] (-) TimerEvent: {}
+[26.895743] (-) TimerEvent: {}
+[26.996314] (-) TimerEvent: {}
+[27.024010] (gazebo_ros2_control_demos) StdoutLine: {'line': b'[ 58%] Built target example_tricycle_drive\n'}
+[27.096433] (-) TimerEvent: {}
+[27.196813] (-) TimerEvent: {}
+[27.297338] (-) TimerEvent: {}
+[27.397721] (-) TimerEvent: {}
+[27.498208] (-) TimerEvent: {}
+[27.596011] (gazebo_ros2_control_demos) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable example_position\x1b[0m\n'}
+[27.598307] (-) TimerEvent: {}
+[27.698658] (-) TimerEvent: {}
+[27.799186] (-) TimerEvent: {}
+[27.899556] (-) TimerEvent: {}
+[27.958672] (gazebo_ros2_control_demos) StdoutLine: {'line': b'[ 66%] Built target example_position\n'}
+[27.999665] (-) TimerEvent: {}
+[28.100003] (-) TimerEvent: {}
+[28.200393] (-) TimerEvent: {}
+[28.300777] (-) TimerEvent: {}
+[28.401177] (-) TimerEvent: {}
+[28.501557] (-) TimerEvent: {}
+[28.601914] (-) TimerEvent: {}
+[28.693572] (gazebo_ros2_control_demos) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable example_effort\x1b[0m\n'}
+[28.702032] (-) TimerEvent: {}
+[28.705992] (gazebo_ros2_control_demos) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable example_velocity\x1b[0m\n'}
+[28.719034] (gazebo_ros2_control_demos) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX executable example_diff_drive\x1b[0m\n'}
+[28.802207] (-) TimerEvent: {}
+[28.839738] (gazebo_ros2_control_demos) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable example_gripper\x1b[0m\n'}
+[28.902385] (-) TimerEvent: {}
+[29.002989] (-) TimerEvent: {}
+[29.045187] (gazebo_ros2_control_demos) StdoutLine: {'line': b'[100%] Built target example_effort\n'}
+[29.052125] (gazebo_ros2_control_demos) StdoutLine: {'line': b'[100%] Built target example_velocity\n'}
+[29.069465] (gazebo_ros2_control_demos) StdoutLine: {'line': b'[100%] Built target example_diff_drive\n'}
+[29.103138] (-) TimerEvent: {}
+[29.137960] (gazebo_ros2_control_demos) StdoutLine: {'line': b'[100%] Built target example_gripper\n'}
+[29.152303] (gazebo_ros2_control_demos) CommandEnded: {'returncode': 0}
+[29.203054] (gazebo_ros2_control_demos) JobProgress: {'identifier': 'gazebo_ros2_control_demos', 'progress': 'install'}
+[29.203148] (-) TimerEvent: {}
+[29.204584] (gazebo_ros2_control_demos) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eid/ws_gazebo/src/build/gazebo_ros2_control_demos'], 'cwd': '/home/eid/ws_gazebo/src/build/gazebo_ros2_control_demos', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eid'), ('LC_TIME', 'en_US.UTF-8'), ('Lang', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eid/ws_gazebo/src/install/gazebo_ros2_control/lib:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/lib:/home/eid/ws_gazebo/src/install/serial/lib:/home/eid/ws_gazebo/src/install/diffdrive_arduino/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eid'), ('OLDPWD', '/home/eid/ws_gazebo/src/nixbot'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1668'), ('SYSTEMD_EXEC_PID', '1834'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5537'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eid/ws_gazebo/src/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'xim'), ('LOGNAME', 'eid'), ('JOURNAL_STREAM', '8:28618'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eid'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/SNOKOS:@/tmp/.ICE-unix/1808,unix/SNOKOS:/tmp/.ICE-unix/1808'), ('INVOCATION_ID', 'e2186537b9204a15bf5a04025266707d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=none'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BAYQL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:dc140fc0-9e74-44bd-bd70-7af89fefef5a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'xim'), ('PWD', '/home/eid/ws_gazebo/src/build/gazebo_ros2_control_demos'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/eid/ws_gazebo/src/install/serial_motor_demo/lib/python3.10/site-packages:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eid/ws_gazebo/src/install/gazebo_ros2_control:/home/eid/ws_gazebo/src/install/serial_motor_demo_msgs:/home/eid/ws_gazebo/src/install/serial:/home/eid/ws_gazebo/src/install/rplidar_ros:/home/eid/ws_gazebo/src/install/nixbot:/home/eid/ws_gazebo/src/install/my_first_pkg:/home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos:/home/eid/ws_gazebo/src/install/diffdrive_arduino:/home/eid/ws_gazebo/src/install/serial_motor_demo:/opt/ros/humble')]), 'shell': False}
+[29.213230] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[29.213978] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[29.214588] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//launch/cart_example_effort.launch.py\n'}
+[29.214786] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//launch/cart_example_position.launch.py\n'}
+[29.215012] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//launch/cart_example_velocity.launch.py\n'}
+[29.215191] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//launch/diff_drive.launch.py\n'}
+[29.215277] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//launch/gripper_mimic_joint_example.launch.py\n'}
+[29.215357] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//launch/tricycle_drive.launch.py\n'}
+[29.215468] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//config/cart_controller.yaml\n'}
+[29.215656] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//config/cart_controller_effort.yaml\n'}
+[29.215878] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//config/cart_controller_velocity.yaml\n'}
+[29.216061] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//config/config.rviz\n'}
+[29.216219] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//config/diff_drive_controller.yaml\n'}
+[29.216330] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//config/gripper_controller.yaml\n'}
+[29.216404] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//config/tricycle_drive_controller.yaml\n'}
+[29.216583] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//urdf/test_cart_effort.xacro.urdf\n'}
+[29.216779] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//urdf/test_cart_position.xacro.urdf\n'}
+[29.216961] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//urdf/test_cart_velocity.xacro.urdf\n'}
+[29.217179] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//urdf/test_diff_drive.xacro.urdf\n'}
+[29.217276] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//urdf/test_gripper_mimic_joint.xacro.urdf\n'}
+[29.217439] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos//urdf/test_tricycle_drive.xacro.urdf\n'}
+[29.217601] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/lib/gazebo_ros2_control_demos/example_position\n'}
+[29.217821] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/lib/gazebo_ros2_control_demos/example_velocity\n'}
+[29.218013] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/lib/gazebo_ros2_control_demos/example_effort\n'}
+[29.218184] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/lib/gazebo_ros2_control_demos/example_diff_drive\n'}
+[29.218449] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/lib/gazebo_ros2_control_demos/example_tricycle_drive\n'}
+[29.218631] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/lib/gazebo_ros2_control_demos/example_gripper\n'}
+[29.218857] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/ament_index/resource_index/package_run_dependencies/gazebo_ros2_control_demos\n'}
+[29.219054] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/ament_index/resource_index/parent_prefix_path/gazebo_ros2_control_demos\n'}
+[29.219279] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos/environment/ament_prefix_path.sh\n'}
+[29.219489] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos/environment/ament_prefix_path.dsv\n'}
+[29.219627] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos/environment/path.sh\n'}
+[29.219798] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos/environment/path.dsv\n'}
+[29.219981] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos/local_setup.bash\n'}
+[29.220144] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos/local_setup.sh\n'}
+[29.220469] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos/local_setup.zsh\n'}
+[29.220728] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos/local_setup.dsv\n'}
+[29.220841] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Symlinking: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos/package.dsv\n'}
+[29.231153] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/ament_index/resource_index/packages/gazebo_ros2_control_demos\n'}
+[29.231425] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos/cmake/gazebo_ros2_control_demosConfig.cmake\n'}
+[29.231629] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos/cmake/gazebo_ros2_control_demosConfig-version.cmake\n'}
+[29.231722] (gazebo_ros2_control_demos) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eid/ws_gazebo/src/install/gazebo_ros2_control_demos/share/gazebo_ros2_control_demos/package.xml\n'}
+[29.234032] (gazebo_ros2_control_demos) CommandEnded: {'returncode': 0}
+[29.296955] (gazebo_ros2_control_demos) JobEnded: {'identifier': 'gazebo_ros2_control_demos', 'rc': 0}
+[29.297520] (-) EventReactorShutdown: {}

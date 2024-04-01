@@ -1,0 +1,1 @@
+/home/eid/ws_gazebo/src/nixbot/launch/launch_sim.launch.py
